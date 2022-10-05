@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="headline"><h1>ETCH-A-SKETCH</h1></div>
+        <div class="section">
+            <div class="left-section">
+                <div class="container">  
+                </div>
+            </div>
+            <div class="right-section">
+                <div style="color:white; font-size: 18px;text-decoration: underline;"><p>Move blue dot to change value of your drawing grid!</p></div>
+                <div ><span><p class="display">16</p></span></div>
+                <div><input oninput="displayValue()" onchange="displayValue()" type="range" id="slide" min="1" max="25" value="15"></div>
+                <div style="text-align:center ;">
+                    <div style="color:white; font-size: 18px;text-decoration: underline;"><p>Click on circle to change color</p></div>
+                    <input type="color" id="pallete" onchange="colorsPicker()"></div>
+                <div id="buttons">
+                    <div><button onclick="createGrid()">Click to make drawing board</button></div>
+                    <div><button class="reset" onclick="clearClass()"> Reset drawing board</button></div>
+                    <div><button class="reset" onclick="clearScreen()"> Clear drawing board</button></div>
+                </div>
+            </div> 
+        </div>    
+    <div>
+</div>
+</body>
+</html>
