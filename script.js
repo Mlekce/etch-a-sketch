@@ -2,8 +2,12 @@ const container = document.querySelector(".container");
 const display = document.querySelector(".display");
 const pallete = document.getElementById("pallete");
 
+displayValue();
+
 function displayValue(){
   display.innerText = document.querySelector('#slide').value;
+  clearScreen();
+  createGrid();
 }
 
 function colorsPicker(){
@@ -38,7 +42,7 @@ function clearScreen(){
   });
 };
 
-function clearClass(){
+function clearBackground(){
   const elements = document.querySelectorAll('.box');
     elements.forEach((element)=>{
     element.style.cssText = 'background-color:rgb(180, 207, 235)';

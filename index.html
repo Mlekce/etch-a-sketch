@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
-    <title>Document</title>
+    <title>ETCH-A-SKETCH</title>
 </head>
 <body>
     <div class="main">
@@ -17,20 +20,26 @@
                 </div>
             </div>
             <div class="right-section">
-                <div style="color:white; font-size: 18px;text-decoration: underline;"><p>Move blue dot to change value of your drawing grid!</p></div>
+                <div class="instructions"><p>Move blue dot to change value of your drawing grid!</p></div>
                 <div ><span><p class="display">16</p></span></div>
                 <div><input oninput="displayValue()" onchange="displayValue()" type="range" id="slide" min="1" max="25" value="15"></div>
                 <div style="text-align:center ;">
-                    <div style="color:white; font-size: 18px;text-decoration: underline;"><p>Click on circle to change color</p></div>
+                    <div class="instructions"><p>Click on circle to change color</p></div>
                     <input type="color" id="pallete" onchange="colorsPicker()"></div>
                 <div id="buttons">
+                    <div><button class="reset" onclick="clearBackground()"> Reset drawing board</button></div>
+                   <!-- 
                     <div><button onclick="createGrid()">Click to make drawing board</button></div>
-                    <div><button class="reset" onclick="clearClass()"> Reset drawing board</button></div>
-                    <div><button class="reset" onclick="clearScreen()"> Clear drawing board</button></div>
+                    <div><button class="reset" onclick="clearScreen()"> Clear drawing board</button></div>-->
                 </div>
             </div> 
         </div>    
     <div>
-</div>
+        <br>
+        <br>
+        <br>
+    <div class="main madeBy">Made by Mlekce</div>
+
+
 </body>
 </html>

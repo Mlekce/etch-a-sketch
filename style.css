@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Silkscreen&display=swap');
 .main {
     display: flex;
     flex-direction: column;
@@ -5,15 +6,20 @@
     justify-content: center;
 }
 .headline{
-    color: white;
+    color: rgb(240, 178, 178);
     font-size: 42px;
     font-weight: bold;
     flex-basis: 100%;
 } 
+.madeBy{
+    color: white;
+    font-size: 24px;
+    font-style: italic;
+    color: rgb(240, 178, 178);
+}
 .section {
     display: flex;
     flex-direction: row;
-    border: 1px solid purple;
 }
 .left-section {
     height: 500px;
@@ -23,38 +29,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     height: 500px;
     width: 500px;
     box-sizing: border-box;
-
 }
 .container {
     height: 500px;
     width: 500px;
-    border: 1px solid rgb(33, 72, 201);
-    border: 1px solid green;
     display: grid;  
 }
 .box {
     background-color: rgb(180, 207, 235);
     border: 0.5px solid gray;
-    
+   
 }
 body {
+    text-shadow: 2px 2px black;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Silkscreen', cursive;
+    font-size: 400;
     margin: 0;
     padding: 0;
-    background-color: rgb(133, 133, 172);
+    background-color: rgb(148, 195, 233);
+    color: rgb(240, 178, 178);
 }
 .display {
-    
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 24px;
-    
-    
+    font-size: 28px;
+    text-shadow: 2px 2px 5px black;
 }
-
 #pallete {
     -webkit-appearance:none;
     -moz-appearance: none;
@@ -69,18 +73,28 @@ body {
     border-radius: 50%;
     border: 5px solid black;
 }
-
 button {
+    font-family: 'Silkscreen', cursive;
     padding: 14px;
     height: 70px;
     width: 200px;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 200;
     margin: 5px;
     border-radius: 10px;
+    background-color: rgb(180, 207, 235);
+    color: rgb(5, 5, 5);
 }
 #buttons {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
+}
+.instructions {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight:200;
+    font-size: 22px;
+    text-shadow: 2px 2px black;
 }
